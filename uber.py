@@ -5,9 +5,13 @@
 
 import numpy as np
 import pandas as pd
+import requests, zipfile, io
 
+# import in the data file:
+r = requests.get("http://s3.amazonaws.com/datashader-data/nyc_taxi.zip")
+z = zipfile.ZipFile(io.BytesIO(r.content))
+z.extractall('.')
 
-# In[153]:
 
 taxi = pd.read_csv("nyc_taxi.csv").rename(columns = str.lower).rename(columns={'tpep_pickup_datetime': 'pickup_date', 'tpep_dropoff_datetime' : 'dropoff_date' })
 

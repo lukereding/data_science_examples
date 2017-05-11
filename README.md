@@ -6,3 +6,4 @@
 - https://www.kaggle.com/bls/american-time-use-survey
 - bokeh dashboard
 - map house ages in austin via web crawling trulia 
+- radar plot from NBA play stats dataset on kaggle

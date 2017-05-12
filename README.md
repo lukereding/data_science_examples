@@ -7,3 +7,4 @@
 - bokeh dashboard
 - map house ages in austin via web crawling trulia 
 - radar plot from NBA play stats dataset on kaggle
+- X things you're missing by not using tidyverse
